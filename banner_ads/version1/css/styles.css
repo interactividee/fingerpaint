@@ -1,0 +1,315 @@
+/* CSS Document */
+
+#wrapper {
+	position: absolute;
+	width: 160px;
+	height: 600px;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+
+#overallLink {
+	position: absolute;
+	width: 160px;
+	height: 600px;
+	top: 0;
+	left: 0;
+	text-decoration: none;
+	z-index: 5;
+}
+
+#buttonLink {
+	animation: finalFrame 23s linear 3 forwards;
+	position: absolute;
+	width: 134px;
+	height: 43px;
+	top: 258px;
+	left: 13px;
+	text-decoration: none;
+	z-index:6;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#piLink {
+	animation: finalFrame 23s linear 3 forwards;
+	position: absolute;
+	width: 160px;
+	height: 30px;
+	top: 322px;
+	left: 0;
+	text-decoration: none;
+	z-index:6;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#medguideLink {
+	animation: finalFrame 23s linear 3 forwards;
+	position: absolute;
+	width: 160px;
+	height: 10px;
+	top: 365px;
+	left: 0;
+	text-decoration: none;
+	z-index:6;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#eyebrow {
+	animation: eyebrow 23s linear 3 forwards;
+	position: absolute;
+	width: 160px;
+	height: 57px;
+	top: 0;
+	background-color: #62bb46;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 2;
+}
+
+#eyebrowText { 
+	animation: eyebrowText 23s linear 3 forwards;
+	position: absolute;
+	top: 10px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 3;
+}
+
+#text1 {
+	animation: text1 23s linear 3 forwards;
+	position: absolute;
+	width: 160px;
+	height: auto;
+	top: 72px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 0;
+}
+
+#bkgdGuys {
+	animation: bkgdGuys 23s linear 3 forwards;
+	position: absolute;
+	width: 160px;
+	height: auto;
+	bottom: 160px;
+	visibility: hidden;
+	opacity: 0;
+	z-index:0;
+}
+
+#mainSubject {
+	animation: mainSubject 23s linear 3 forwards;
+	position: absolute;
+	width: 215px;
+	height: auto;
+	bottom: 183px;
+	left: -47px;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 3;
+}
+
+#text2 {
+	animation: text2 23s linear 3 forwards;
+	position: absolute;
+	width: 160px;
+	height: auto;
+	top: 20px;
+	z-index: 3;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#finalFrame {
+	animation: finalFrame 23s linear 3 forwards;
+	position: absolute;
+	width: 160px;
+	height: 392px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#logo {
+	position: absolute;
+	width: 160px;
+	height: auto;
+	top: 60px;
+	left: 0;
+}
+
+#text3 {
+	position: absolute;
+	width: 160px;
+	height: auto;
+	top: 128px;
+	left: 0;
+}
+
+#cta {
+	position: absolute;
+	width: 120px;
+	height: 30px;
+	top: 264px;
+	left: 20px;
+	background-color: #62bb46;
+}
+
+#ctaRight {
+	position: absolute;
+	width: 20px;
+	height: 30px;
+	right: 0;
+	background-color: #81c96b;
+}
+
+#ctaTextIcon {
+	position: absolute;
+	width: 160px;
+	height: auto;
+	top: 267px;
+	left:0;
+}
+
+#blueLinks {
+	position: absolute;
+	width: 160px;
+	height: auto;
+	top: 305px;
+	left: 0;
+}
+
+#ISI { 
+	position: absolute; 
+	bottom: 0px; 
+	left: 0px; 
+	width: 160px; 
+	height: 208px; 
+	z-index: 5; 
+	background: #ffffff; 
+	overflow: hidden; 
+	border-top: 2px solid #ccc; 
+}
+
+.scroll-pane { 
+	width: 100%; 
+	height: 208px; 
+	overflow: hidden; 
+}
+
+.jspVerticalBar { border-left: none; background: #fff; height: 100%;}
+.jspTrack { width: 6px; margin: 0 4px !important; background: #ccc;}
+.jspDrag { background: #999; }
+.jspPane { width: 133px !important; margin:0 6px; font-size: 10px; line-height:1em; padding-bottom: 24px !important; }
+.jspPane p { font-family: 'Roboto Condensed', sans-serif; }
+.jspPane p strong { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; }
+.jspPane img { position: relative; margin-top:3px;}
+.jspArrowUp, .jspArrowDown { background: #fff;}
+.jspArrow, .jspArrow.jspDisabled { background: #fff; display: none; }
+
+.isi-bullet-text {
+	margin-left: 6px !important;
+	margin-bottom: 5px !important;
+}
+
+.isi-bullet {
+	position: absolute;
+	display: block;
+	-webkit-transform: translateX(-6px);
+	-moz-transform: translateX(-2px);
+	-o-transform: translateX(-6px);
+	transform: translateX(-6px);
+	color: #870051;
+}
+
+#ISI p {
+    margin: 1px 0;
+    line-height: 1.2;
+}
+
+#ISI .bluebox {
+	padding:5px;
+    background-color: #1f688a;
+}
+
+#ISI .bluebox p{
+	color: #fff;
+}
+
+#ISI .header {
+    color: #1f688a;
+}
+
+#ISI .bluebox sup {
+
+}
+
+#ISI .boldSup {
+	top: 0px;
+	font-size: 9px;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+#ISI .underlined {
+    text-decoration: underline;
+    cursor:pointer;
+    color:#1f688a;
+}
+
+#ISI .spacer {
+    line-height: 0.2;
+}
+
+#ISI .boxed {
+    border: 1px solid #000;
+    padding: 7px 5px 7px 10px;
+}
+
+#ISI .aristada-logo-spacer {
+    line-height: 1;
+}
+
+#ISI .aristada-logo {
+    width: 100%;
+    height: 53px;
+}
+
+#ISI .aristada-logo img {
+    display: block;
+}
+
+#ISI .alkermes-logo-spacer {
+    line-height: 2.5;
+}
+
+#ISI .alkermes-logo {
+    width: 100%;
+}
+
+#ISI .alkermes-logo img {
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+#ISI .alkermes-logo div {
+    display: inline-block;
+    width: 133px;
+}
+
+#ISI .alkermes-logo p {
+    font-size: 9px;
+}
+
+#ISI .bottom-spacer {
+    line-height: 1.5;
+}

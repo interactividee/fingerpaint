@@ -1,0 +1,152 @@
+/* CSS Document */
+
+@keyframes eyebrow {
+	0%, 1% {
+		visibility: hidden;
+		opacity: 0;	
+		background-color: #62bb46;
+		height: 57px;
+		top: 0;
+	}
+	2%, 25% {
+		visibility: visible;
+		opacity: 1;
+		background-color: #62bb46;
+		height: 57px;
+		top: 0;
+	}
+	26% {
+		visibility: visible;
+		opacity: 1;
+		background-color: #870051;
+		height: 57px;
+		top: 0;
+	}
+	29%, 50% {
+		visibility: visible;
+		opacity: 1;
+		background-color: #870051;
+		height: 392px;
+		top: 0;
+	}
+	51.5%{
+		visibility: hidden;
+		opacity: 0;
+		background-color: #870051;
+		height: 392px;
+		top: 0;
+	}
+	51.6%, 52% {
+		visibility: hidden;
+		opacity: 0;	
+		background-color: #62bb46;
+		height: 57px;
+		top: 0;
+	}
+	53%, 100% {
+		visibility: visible;
+		opacity: 1;
+		background-color: #62bb46;
+		height: 57px;
+		top: 0;
+	}
+	
+}
+
+@keyframes eyebrowText {
+	0%, 1% {
+		visibility: hidden;
+		opacity: 0;	
+	}
+	2%, 25% {
+		visibility: visible;
+		opacity: 1;
+	}
+	26%, 52% {
+		visibility: hidden;
+		opacity: 0;	
+	}
+	53%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes text1 {
+	0%, 2% {
+		visibility: hidden;
+		opacity: 0;	
+	}
+	4%, 25% {
+		visibility: visible;
+		opacity: 1;
+	}
+	26%, 100% {
+		visibility: hidden;
+		opacity: 0;	
+	}
+}
+
+@keyframes bkgdGuys {
+	0%, 25% {
+		visibility: visible;
+		opacity: 1;
+	}
+	26%, 100% {
+		visibility: hidden;
+		opacity: 0;	
+	}
+}
+
+@keyframes mainSubject {
+	0%, 26% {
+		visibility: visible;
+		opacity: 1;
+		width: 215px;
+		height: auto;
+		bottom: 183px;
+		left: -47px;
+	}
+	30%, 50% {
+		visibility: visible;
+		opacity: 1;
+		width: 350px;
+		height: auto;
+		bottom: 88px;
+		left: -127px;
+	}
+	51.5%, 100% {
+		visibility: hidden;
+		opacity: 0;
+		width: 350px;
+		height: auto;
+		bottom: 88px;
+		left: -127px;
+	}
+}
+
+@keyframes text2 {
+	0%, 27% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	28%, 49% {
+		visibility: visible;
+		opacity: 1;
+	}
+	50%, 100% {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+@keyframes finalFrame {
+	0%, 52% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	53%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}

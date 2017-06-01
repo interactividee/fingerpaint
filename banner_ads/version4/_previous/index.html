@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="ad.size" content="width=300,height=600">
+
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #fff;
+        }
+
+
+        #ad {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid #000;
+            width: 298px;
+            height: 598px;
+            overflow: hidden;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbdd9c+15,efab72+60,e38738+95 */
+            background: #fbdd9c; /* Old browsers */
+            background: -moz-radial-gradient(right 60%, ellipse cover,  #fbdd9c 10%, #efab72 55%, #e38738 95%); /* FF3.6-15 */
+            background: -webkit-radial-gradient(right 60%, ellipse cover,  #fbdd9c 10%,#efab72 55%,#e38738 95%); /* Chrome10-25,Safari5.1-6 */
+            background: radial-gradient(ellipse at right 60%,  #fbdd9c 10%,#efab72 55%,#e38738 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+        }
+
+
+
+
+        .fadeIn{
+            opacity: 0;
+            -webkit-animation-name: fadeIn_animation;
+                    animation-name: fadeIn_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+        @-webkit-keyframes fadeIn_animation {
+            0%{opacity: 0;}
+            5%, 100%{opacity: 1;}
+        }
+
+       @keyframes fadeIn_animation {
+            0%{opacity: 0;}
+            5%, 100%{opacity: 1;}
+        }
+
+
+        .fadeOut{
+            opacity: 1;
+            -webkit-animation-name: fadeOut_animation;
+                    animation-name: fadeOut_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: initial;
+                    animation-fill-mode: initial;
+            -webkit-animation-iteration-count: 2;
+                    animation-iteration-count: 2;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+       @-webkit-keyframes fadeOut_animation {
+            0%, 95%{opacity: 1;}
+            100% {opacity: 0;}
+        }
+       @keyframes fadeOut_animation {
+            0%, 95%{opacity: 1;}
+            100% {opacity: 0;}
+        }
+
+
+
+        /* frame 1 elements */
+        #logo {
+            position: absolute;
+            top: 15px;
+            left: 55px;
+        }
+
+
+        #text1{
+            position: absolute;
+            top: 85px;
+            left: 22px;
+            opacity: 1;
+            -webkit-animation-name: text1_animation;
+                    animation-name: text1_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+        @-webkit-keyframes text1_animation{
+            0%,25%{opacity: 1;}
+            35%, 100%{opacity: 0;}
+        }
+        @keyframes text1_animation{
+            0%,25%{opacity: 1;}
+            35%, 100%{opacity: 0;}
+        }
+
+
+
+
+
+        #graphic1{
+            position: absolute;
+            top: 200px;
+            left: 0;
+            opacity: 1;
+            -webkit-animation-name: graphic1_animation;
+                    animation-name: graphic1_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+        @-webkit-keyframes graphic1_animation{
+            0%,50%{opacity: 1;}
+            60%, 100%{opacity: 0;}
+        }        @keyframes graphic1_animation{
+            0%,50%{opacity: 1;}
+            60%, 100%{opacity: 0;}
+        }
+
+
+        #simple{
+            opacity: 0;
+            -webkit-animation-name: simplie_animation;
+                    animation-name: simplie_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+        @-webkit-keyframes simplie_animation {
+            0%, 15%{opacity: 0;}
+            25%,50%{opacity: 1;}
+            55%,100% {opacity: 0;}
+        }
+        @keyframes simplie_animation {
+            0%, 15%{opacity: 0;}
+            25%,50%{opacity: 1;}
+            55%,100% {opacity: 0;}
+        }
+
+        #s,
+        #i,
+        #m,
+        #p,
+        #l,
+        #e{
+            position: absolute;
+        }
+        #s{
+            top: 115px;
+            left: 198px;
+            -webkit-animation-name: s_animation;
+                    animation-name: s_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+       @-webkit-keyframes s_animation {
+            0%, 30% {
+            top: 115px;
+            left: 198px;
+            }
+            40%, 100% {
+            top: 137px;
+            left: 90px;
+            }
+        }
+        @keyframes s_animation {
+            0%, 30% {
+            top: 115px;
+            left: 198px;
+            }
+            40%, 100% {
+            top: 137px;
+            left: 90px;
+            }
+        }
+
+        #i{
+            top: 84px;
+            left: 64px;
+            -webkit-animation-name: i_animation;
+                    animation-name: i_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+       @-webkit-keyframes i_animation {
+            0%, 30% {
+            top: 84px;
+            left: 64px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 110px;
+            }
+        }
+       @keyframes i_animation {
+            0%, 30% {
+            top: 84px;
+            left: 64px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 110px;
+            }
+        }
+
+        #m{
+            top: 116px;
+            left: 102px;
+            -webkit-animation-name: m_animation;
+                    animation-name: m_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+       @-webkit-keyframes m_animation {
+            0%, 30% {
+            top: 116px;
+            left: 102px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 122px;
+            }
+        }
+       @keyframes m_animation {
+            0%, 30% {
+            top: 116px;
+            left: 102px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 122px;
+            }
+        }
+
+        #p{
+            top: 116px;
+            left: 42px;
+            -webkit-animation-name: p_animation;
+                    animation-name: p_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+       @-webkit-keyframes p_animation {
+            0%, 30% {
+            top: 116px;
+            left: 42px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 148px;
+            }
+        }
+       @keyframes p_animation {
+            0%, 30% {
+            top: 116px;
+            left: 42px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 148px;
+            }
+        }
+
+        #l{
+            top: 148px;
+            left: 80px;
+            -webkit-animation-name: l_animation;
+                    animation-name: l_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+        @-webkit-keyframes l_animation {
+            0%, 30% {
+              top: 148px;
+              left: 80px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 168px;
+            }
+        }
+        @keyframes l_animation {
+            0%, 30% {
+              top: 148px;
+              left: 80px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 168px;
+            }
+        }
+
+        #e{
+            top: 84px;
+            left: 210px;
+            -webkit-animation-name: e_animation;
+                    animation-name: e_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+        @-webkit-keyframes e_animation {
+            0%, 30% {
+              top: 84px;
+              left: 210px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 188px;
+            }
+        }
+        @keyframes e_animation {
+            0%, 30% {
+              top: 84px;
+              left: 210px;
+            }
+            40%, 100% {
+            top: 138px;
+            left: 188px;
+            }
+        }
+
+        #made-simple {
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            margin-left: -58px;
+            top: 107px;
+            -webkit-animation-name: made_simplie_animation;
+                    animation-name: made_simplie_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+       @-webkit-keyframes made_simplie_animation {
+            0%, 40%{opacity: 0;}
+            50%,60%{opacity: 1;}
+            60%,100% {opacity: 0;}
+        }
+        @keyframes made_simplie_animation {
+            0%, 40%{opacity: 0;}
+            50%,60%{opacity: 1;}
+            60%,100% {opacity: 0;}
+        }
+
+
+
+
+
+        #final_scene{
+            position:absolute;
+            top:55px;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            -webkit-animation-name: final_scene_animation;
+                    animation-name: final_scene_animation;
+            -webkit-animation-duration: 15s;
+                    animation-duration: 15s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 3;
+                    animation-iteration-count: 3;
+            -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+        }
+
+       @-webkit-keyframes final_scene_animation {
+            0%,60%{opacity: 0;}
+            70%,100% {opacity: 1;}
+        }
+        @keyframes final_scene_animation {
+            0%,60%{opacity: 0;}
+            70%,100% {opacity: 1;}
+        }
+
+        #text2{
+            position: absolute;
+            text-align: center;
+            color: #ffffff;
+            font-size: 17px;
+            line-height: 22px;
+            right:0;
+            top:121px;
+            width: 160px;
+        }
+        #phone{
+            position: absolute;
+            left: 20px;
+            top: 45px;
+        }
+        #badge{
+            position: absolute;
+            right: 53px;
+            top: 60px;
+        }
+        #text3{
+            top: 175px;
+            right: 0;
+            width: 160px;
+            position: absolute;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            text-align: center;
+            font-weight:bold;
+            color: #a30046;
+            font-size: 18px;
+            line-height: 22px;
+
+        }
+        #text3 span{
+            font-size: 22px;
+            line-height: 0;
+        }
+
+        #store_icons{
+            position:absolute;
+            right:30px;
+            top: 211px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #legal {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 298px;
+            height: 194px;
+        }
+        #isi-holder {
+            position: absolute;
+            width: 298px;
+            height: 162px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            left: 0;
+            top: 0;
+        }
+
+        #isi {
+            font-size: 10px;
+            width: 95%;
+            padding: 5px 0 10px 6px;
+            font-family: sans-serif;
+        }
+
+        #isi p {
+            margin: 0 0 5px;
+        }
+
+        #isi strong {
+            display: block;
+            margin: 0 0 2px 0;
+        }
+
+        #isi ul {
+            padding-left: 12px;
+            margin: 0 0 5px 0;
+        }
+
+        #isi ul li{
+            margin: 0 0 2px 0;
+        }
+
+        #isi address {
+            font-style: normal;
+        }
+
+        #isi .mal-logo {
+            margin: 10px 0 15px;
+            max-width: 100%;
+        }
+
+
+
+        #pi {
+            position: absolute;
+            font-weight: normal;
+            font-size: 10px;
+            font-family: sans-serif;
+            color: #ffffff;
+            text-decoration: underline;
+            text-align: center;
+            height: 32px;
+            width: 149px;
+            line-height: 32px;
+            left: 0;
+            bottom:0;
+            background-color: #a30046;
+
+            text-align: right;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-right:00px;
+        }
+
+        #mg {
+            position: absolute;
+            font-weight: normal;
+            font-size: 10px;
+            font-family: sans-serif;
+            color: #ffffff;
+            text-decoration: underline;
+            text-align: center;
+            height: 32px;
+            width: 149px;
+            line-height: 32px;
+            right: 0;
+            bottom:0;
+            background-color: #a30046;
+
+            text-align: left;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding-left:20px;
+        }
+
+
+
+
+
+
+        .taparea {
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            background-color: transparent;
+        }
+
+        #taparea_1 {
+            left: 0;
+            top: 0;
+            width: 298px;
+            height: 404px;
+        }
+
+        #taparea_2 {
+            left: 0;
+            bottom: 0;
+            width: 149px;
+            height: 32px;
+        }
+        #taparea_3 {
+            right: 0;
+            bottom: 0;
+            width: 149px;
+            height: 32px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var clickTag = "#URL_NEEDED";
+        var clickTag2 = "http://www.acthar.com/pdf/Acthar-PI.pdf";
+        var clickTag3 = "http://www.acthar.com/pdf/IS_Medication_Guide.pdf";
+        var clickTag4 = "http://www.mallinckrodt.com";
+    </script>
+
+</head>
+
+<body>
+<div id="ad" class="page1">
+
+    <img src="images/acthar-logo.png" id="logo">
+
+
+    <div class="fadeIn">
+        <div class="fadeOut">
+
+            <div id="scene1">
+                <img src="images/infantile-type-all.png" id="text1">
+                <img src="images/baby-lines.png" id="graphic1">
+            </div>
+
+            <div id="simple">
+                <img id="s" src="images/S-only.png" />
+                <img id="i" src="images/I-only.png" />
+                <img id="m" src="images/M-only.png" />
+                <img id="p" src="images/P-only.png" />
+                <img id="l" src="images/L-only.png" />
+                <img id="e" src="images/E-only.png" />
+            </div>
+
+            <img src="images/made-simple.png" id="made-simple" />
+
+
+            <div id="final_scene">
+                <div id="text2">Infantile Spasms Dosing Calculator</div>
+                <img src="images/phone.png" id="phone">
+                <img src="images/badge.png" id="badge">
+                <div id="text3"><span>&raquo;</span> Get the App <span>&laquo;</span></div>
+                <img src="images/icons-together.png" id="store_icons">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="legal">
+        <div id="isi-holder">
+            <div id="isi">
+                <strong style="color:#a30046;">Indication</strong>
+                <p>
+                Acthar is indicated as monotherapy treatment of infantile spasms in infants and children under 2 years of age.
+                </p>
+                <strong style="color:#a30046;">Important Safety Information</strong>
+                <ul>
+                  <li>Acthar should never be administered intravenously.</li>
+                  <li>Administration of live or live attenuated vaccines is contraindicated in patients receiving immunosuppressive doses of Acthar.</li>
+                  <li>Acthar is contraindicated where congenital infections are suspected in infants.</li>
+                  <li>Acthar is contraindicated in patients with scleroderma, osteoporosis, systemic fungal infections, ocular herpes simplex, recent surgery, history of or the presence of a peptic ulcer, congestive heart failure, uncontrolled hypertension, primary adrenocortical insufficiency, adrenocortical hyperfunction or sensitivity to proteins of porcine origins.</li>
+                  <li>The adverse effects of Acthar are related primarily to its steroidogenic effects. </li>
+                  <li>Acthar may increase susceptibility to new infection or reactivation of latent infections.</li>
+                  <li>Suppression of the HPA may occur following prolonged therapy with the potential for adrenal insufficiency after withdrawal of the medication. Cushing’s Syndrome may occur during therapy but generally resolves after therapy is stopped. Monitor patients for signs and symptoms.</li>
+                  <li>Monitor patients for elevation of blood pressure, salt and water retention, and hypokalemia.</li>
+                  <li>Acthar often acts by masking symptoms of other diseases/disorders. Monitor patients carefully during and following discontinuation.</li>
+                  <li>Acthar can cause GI bleeding and gastric ulcer with an increased risk for perforation with certain GI disorders. Monitor for signs of bleeding.</li>
+                  <li>Acthar may be associated with CNS effects ranging from euphoria, insomnia, irritability, mood swings, personality changes, depression, and psychosis. Existing conditions may be aggravated.</li>
+                  <li>Patients with comorbid disease may have that disease worsened. Caution should be used in patients with diabetes and myasthenia gravis.</li>
+                  <li>Prolonged use of Acthar may produce cataracts, glaucoma and secondary ocular infections.</li>
+                  <li>Acthar is immunogenic and prolonged use may increase the risk of hypersensitivity reactions. </li>
+                  <li>There is an enhanced effect in patients with hypothyroidism and those with cirrhosis of liver.</li>
+                  <li>Long‐term use may have negative effects on growth and physical development in children. Monitor pediatric patients.</li>
+                  <li>Decrease in bone density may occur. Monitor during long-term therapy.</li>
+                  <li>Pregnancy Class C: Acthar has been shown to have an embryocidal effect and should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.</li>
+                  <li>Common adverse reactions include fluid retention, alteration in glucose tolerance, elevation in blood pressure, behavioral and mood changes, increased appetite and weight gain.</li>
+                  <li>Specific adverse reactions reported in IS clinical trials in infants and children under 2 years of age included: infection, hypertension, irritability, Cushingoid symptoms, constipation, diarrhea, vomiting, pyrexia, weight gain, increased appetite, decreased appetite, nasal congestion, acne, rash, and cardiac hypertrophy. Convulsions were also reported, but these may actually be occurring because some IS patients progress to other forms of seizures and IS sometimes mask other seizures, which become visible once the clinical spasms from IS resolve.</li>
+                </ul>
+
+                <strong>Other adverse events reported are included in the full Prescribing Information. </strong>
+
+                <strong>Please <a href="javascript:window.open(window.clickTag2)">full Prescribing Information</a> for additional important safety information. </strong>
+
+                <p>
+                    For parents and caregivers of IS patients, please also see <a href="javascript:window.open(window.clickTag3)">Medication Guide</a>.
+                </p>
+
+                <img class="mal-logo" src="images/mal-logo.png" alt="Mallinckrodt Pharmaceuticals">
+
+                <p>
+                    Mallinckrodt, the "M" brand mark and the Mallinckrodt Pharmaceuticals logo are trademarks of a <a href="javascript:window.open(window.clickTag4)">Mallinckrodt company</a>. Other brands are trademarks of a Mallinckrodt company or their respective owners. &copy; 2016 Mallinckrodt. ARDUS/01-02/0416/0011 May 2016
+                </p>
+
+                <p>
+                    Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
+                </p>
+
+                <p>
+                    Android, Google Play and the Google Play logo are trademarks of Google Inc.
+                </p>
+            </div>
+        </div>
+        <div id="pi">
+            Prescribing Information
+        </div>
+        <div id="mg">
+            Medication Guide
+        </div>
+    </div>
+
+    <a href="javascript:window.open(window.clickTag)" id="taparea_1" class="taparea"></a>
+    <a href="javascript:window.open(window.clickTag2)" id="taparea_2" class="taparea"></a>
+    <a href="javascript:window.open(window.clickTag3)" id="taparea_3" class="taparea"></a>
+
+</div>
+<script type="text/javascript">
+    (function () {
+        //ISI AUTO SCROLL
+        document.start = setInterval(function () {
+            document.scroller = setInterval(function () {
+                var div = document.getElementById('isi-holder');
+                scrollMax = parseInt((div.scrollHeight - div.offsetHeight) - 5);
+                if (div.scrollTop < scrollMax) {
+                    div.scrollTop++;
+                } else {
+                    clearInterval(document.scroller);
+                }
+            }, 80);
+            clearTimeout(document.start);
+        }, 15000);
+    })();
+</script>
+</body>
+</html>

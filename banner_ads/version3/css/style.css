@@ -1,0 +1,512 @@
+/* Style definitions. */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+		background: #f2a900; 
+    font-family: Arial, sans-serif;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    width: 160px;
+		border: 1px solid black;
+		box-sizing: border-box;
+}
+
+.main {
+	-webkit-animation: containerlast 11.5s linear 1 forwards ;
+	animation: containerlast 11.5s linear 1 forwards;
+	width: 160px;
+	height: 549px;
+	top: 29px;
+	left: 0px;
+	background: #358DC4; 
+	position: absolute;
+}
+
+.link-overlay {
+    bottom: 0;
+    color: transparent;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.code {
+		-webkit-animation: code 11.5s linear 1 forwards ;
+		animation: code 11.5s linear 1 forwards;
+	font-family: Arial, sans-serif;
+	color: white;
+	font-size: 9px;
+	width: 160px;
+	height: auto;
+	position: absolute;
+	bottom: 3px;
+	left: 0px;
+	z-index:10;
+	text-align:center;
+}
+
+
+.text {
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+}
+
+.logo {
+	-webkit-animation: logolast 11.5s linear 1 forwards;
+	animation: logolast 11.5s linear 1 forwards;
+	position: absolute;
+	width: 143px;
+	height: auto ;
+	top: 240px;
+	left: 9px;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
+}
+
+#text1 {
+	-webkit-animation: text1 11.5s linear 1 forwards;
+	animation: text1 11.5s linear 1 forwards;
+	font-size: 25px;
+	visibility: hidden;
+	width: 142px;
+	height: auto;
+	top: 20px;
+	left: 9px;
+}
+
+#text2 {
+	-webkit-animation: text2last 11.5s linear 1 forwards;
+	animation: text2last 11.5s linear 1 forwards;
+	color: #f2a900;
+	font-size: 19px;
+	visibility: hidden;
+	width: 142px;
+	height: auto;
+	top: 240px;
+	left: 9px;
+}
+
+#text3 {
+	-webkit-animation: text3last 11.5s linear 1 forwards;
+	animation: text3last 11.5s linear 1 forwards;
+	color: #fff;
+	font-size: 19px;
+	visibility: hidden;
+	width: 142px;
+	height: auto;
+	top: 245px;
+	left: -142px;
+	opacity: 0;
+}
+
+.buttons {
+	position: absolute;
+	left: 18px;
+	top: 339px;
+}
+
+.button {
+	width: 124px;
+	height: 56px;
+	display: block;
+	background: rgba(135, 53, 148, 1.0);
+	color: rgba(255, 255, 255, 1.0);
+	border: 1px solid #fff;
+	border-radius: 4px;
+	text-align:center;
+	box-sizing:border-box;
+}
+
+.button-text {
+	font-size: 16px;
+	width: 37px;
+	position: absolute;
+	top: 11px;
+	left: 43px;
+}
+
+.button-text:hover {
+	cursor: pointer;
+}
+
+#button1 {
+	-webkit-animation: button1last 11.5s linear 1 forwards ;
+	animation: button1last 11.5s linear 1 forwards;
+	visibility: hidden;
+	position:relative;
+	z-index: 5;
+}
+
+.mask { display: none; }
+
+#button1:hover .mask {
+	display: inline-block;
+	background: rgba(242, 169, 0, 1.0);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+
+#button2 {
+	-webkit-animation: button2last 11.5s linear 1 forwards;
+	animation: button2last 11.5s linear 1 forwards;
+	visibility: hidden;
+	position:relative;
+	top: 10px;
+	z-index: 5;
+	
+}
+
+#button2:hover .mask {
+	display: inline-block;
+	background: rgba(242, 169, 0, 1.0);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+
+#button3 {
+	-webkit-animation: button3last 11.5s linear 1 forwards;
+	animation: button3last 11.5s linear 1 forwards;
+	visibility: hidden;
+	position:relative;
+	top: 20px;
+	z-index: 5;
+}
+
+#button3:hover .mask {
+	display: inline-block;
+	background: rgba(242, 169, 0, 1.0);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+/* Animation definitions. */
+
+@-webkit-keyframes text1 {
+	0%, 6% {
+		visibility: hidden;
+	}
+	6.01%, 28% {
+		visibility: visible;
+	}
+	28.01%, 100% {
+		visibility: hidden;
+	}
+}
+
+@keyframes text1 {
+	0%, 6% {
+		visibility: hidden;
+	}
+	6.01%, 28% {
+		visibility: visible;
+	}
+	28.01%, 100% {
+		visibility: hidden;
+	}
+}
+
+@-webkit-keyframes containerlast {
+    0%, 3% {
+			background: #358DC4; 
+    }
+		5% {
+			background: #f2a900; 
+		}
+		6% {
+			background: linear-gradient(#f2a900,#358dc4);
+		}
+		7% {
+			background: linear-gradient(#f2a900,#358dc4);
+		}
+		8% {
+			background: linear-gradient(#f2a900,#358dc4); 
+		}
+		9%, 45% {
+			background: #358DC4; 
+		}
+		45.01% {
+			background: linear-gradient(#358DC4, #f2a900 200%); 
+		}
+		47.5% {
+			background: linear-gradient(#358DC4, #f2a900 100%); 
+		}
+		50% {
+			background: linear-gradient(#358DC4, #f2a900 200%); 
+		}
+		55%, 100% {
+			background: #358DC4; 
+		}
+}
+
+@keyframes containerlast {
+    0%, 3% {
+			background: #358DC4; 
+    }
+		5% {
+			background: #f2a900; 
+		}
+		6% {
+			background: linear-gradient(#f2a900,#358dc4);
+		}
+		7% {
+			background: linear-gradient(#f2a900,#358dc4);
+		}
+		8% {
+			background: linear-gradient(#f2a900,#358dc4); 
+		}
+		9%, 45% {
+			background: #358DC4; 
+		}
+		45.01% {
+			background: linear-gradient(#358DC4, #f2a900 200%); 
+		}
+		47.5% {
+			background: linear-gradient(#358DC4, #f2a900 100%); 
+		}
+		50% {
+			background: linear-gradient(#358DC4, #f2a900 200%); 
+		}
+		55%, 100% {
+			background: #358DC4; 
+		}
+ }
+
+@-webkit-keyframes logolast {
+    0%, 5% {
+			width: 143px;
+			top: 240px;
+			left: 9px;
+    }
+		7% {
+			width: 183px;
+			top: 200px;
+			left: -10px;
+		}
+		9%, 100% {
+			width: 143px;
+			top: 120px;
+			left: 9px;
+    }
+}
+
+@keyframes logolast {
+    0%, 5% {
+			width: 143px;
+			top: 240px;
+			left: 9px;
+    }
+		7% {
+			width: 183px;
+			top: 200px;
+			left: -10px;
+		}
+		9%, 100% {
+			width: 143px;
+			top: 120px;
+			left: 9px;
+    }
+}
+
+@-webkit-keyframes text2last {
+	0%, 28% {
+		font-size: 21px;
+		visibility: hidden;
+		width: 142px;
+		top: 40px;
+		left: 9px;
+	}
+	28.01%, 100% {
+		visibility: visible;
+		font-size: 21px;
+		width: 142px;
+		top: 40px;
+		left: 9px;
+	}
+}
+
+@keyframes text2last {
+	0%, 28% {
+		font-size: 21px;
+		visibility: hidden;
+		width: 142px;
+		top: 40px;
+		left: 9px;
+	}
+	28.01%, 100% {
+		visibility: visible;
+		font-size: 21px;
+		width: 142px;
+		top: 40px;
+		left: 9px;
+	}
+}
+
+@-webkit-keyframes text3last {
+	0%, 44% {
+		visibility: hidden;
+		opacity: 0;
+		left: -142px;
+	}
+	47%, 100% {
+		visibility: visible;
+		opacity: 1;
+		left: 9px;
+	}
+}
+
+@keyframes text3last {
+	0%, 44% {
+		visibility: hidden;
+		opacity: 0;
+		left: -142px;
+	}
+	47%, 100% {
+		visibility: visible;
+		opacity: 1;
+		left: 9px;
+	}
+}
+
+@-webkit-keyframes code {
+	0%, 44% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	47%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes code {
+	0%, 44% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	47%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes button1last {
+	0%, 45% {
+		visibility: hidden;
+		box-shadow: 0 0 0 0px #f2a900;	
+	}
+	46%, 48% {
+		visibility: visible;
+		background: rgba(135, 53, 148, 0.0);
+		box-shadow: 0 0 0 3px #f2a900;	
+	}
+	49%, 100% {
+		visibility: visible;
+		box-shadow: 0 0 0 0px #f2a900;	
+		background: rgba(135, 53, 148, 1.0);
+	}
+}
+
+@keyframes button1last {
+	0%, 45% {
+		visibility: hidden;
+		box-shadow: 0 0 0 0px #f2a900;	
+	}
+	46%, 48% {
+		visibility: visible;
+		background: rgba(135, 53, 148, 0.0);
+		box-shadow: 0 0 0 3px #f2a900;	
+	}
+	49%, 100% {
+		visibility: visible;
+		box-shadow: 0 0 0 0px #f2a900;	
+		background: rgba(135, 53, 148, 1.0);
+	}
+}
+
+@-webkit-keyframes button2last {
+	0%, 46% {
+		visibility: hidden;
+		box-shadow: 0 0 0 0px #f2a900;	
+	}
+	47%, 49% {
+		visibility: visible;
+		background: rgba(135, 53, 148, 0.0);
+		box-shadow: 0 0 0 3px #f2a900;	
+	}
+	50%, 100% {
+		visibility: visible;
+		box-shadow: 0 0 0 0px #f2a900;	
+		background: rgba(135, 53, 148, 1.0);
+	}
+}
+
+@keyframes button2last {
+	0%, 46% {
+		visibility: hidden;
+		box-shadow: 0 0 0 0px #f2a900;	
+	}
+	47%, 49% {
+		visibility: visible;
+		background: rgba(135, 53, 148, 0.0);
+		box-shadow: 0 0 0 3px #f2a900;	
+	}
+	50%, 100% {
+		visibility: visible;
+		box-shadow: 0 0 0 0px #f2a900;	
+		background: rgba(135, 53, 148, 1.0);
+	}
+}
+
+@-webkit-keyframes button3last {
+	0%, 47% {
+		visibility: hidden;
+		box-shadow: 0 0 0 0px #f2a900;	
+	}
+	48%, 50% {
+		visibility: visible;
+		background: rgba(135, 53, 148, 0.0);
+		box-shadow: 0 0 0 3px #f2a900;	
+	}
+	51%, 100% {
+		visibility: visible;
+		box-shadow: 0 0 0 0px #f2a900;	
+		background: rgba(135, 53, 148, 1.0);
+	}
+}
+
+@keyframes button3last {
+	0%, 47% {
+		visibility: hidden;
+		box-shadow: 0 0 0 0px #f2a900;	
+	}
+	48%, 50% {
+		visibility: visible;
+		background: rgba(135, 53, 148, 0.0);
+		box-shadow: 0 0 0 3px #f2a900;	
+	}
+	51%, 100% {
+		visibility: visible;
+		box-shadow: 0 0 0 0px #f2a900;	
+		background: rgba(135, 53, 148, 1.0);
+	}
+}

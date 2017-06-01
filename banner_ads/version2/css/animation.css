@@ -1,0 +1,203 @@
+/* CSS ANIMATIONS */
+
+@-webkit-keyframes references-link-text {
+	0%, 80% {
+		color: #1b0e52;
+	}
+	90%, 100% {
+		color: white;
+	}
+}
+
+@keyframes references-link-text {
+	0%, 80% {
+		color: #1b0e52;
+	}
+	90%, 100% {
+		color: white;
+	}
+}
+
+@-webkit-keyframes references-arrow-first {
+	0%, 82% {
+		visibility: visible;
+		opacity: 1;
+	}
+	83%, 100% {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+@keyframes references-arrow-first {
+	0%, 82% {
+		visibility: visible;
+		opacity: 1;
+	}
+	83%, 100% {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes references-arrow-second {
+	0%, 83% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	84%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes references-arrow-second {
+	0%, 83% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	84%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes scene1 {
+	0%, 35% {
+		left: 0px;
+		background-position: 0px 0px;
+	}
+	45%, 80% {
+		left: -325px;
+		background-position: 325px 0px;
+	}
+	90%, 100% {
+		left: -1218px;
+		background-position: 1218px 0px;
+	}
+}
+
+@keyframes scene1 {
+	0%, 35% {
+		left: 0px;
+		background-position: 0px 0px;
+	}
+	45%, 80% {
+		left: -325px;
+		background-position: 325px 0px;
+	}
+	90%, 100% {
+		left: -1218px;
+		background-position: 1218px 0px;
+	}
+}
+
+@-webkit-keyframes scene2 {
+	0%, 35% {
+		left: 628px;
+	}
+	45%, 80% {
+		left: 300px;
+	}
+	90%, 100% {
+		left: -593px;
+	}
+}
+
+@keyframes scene2 {
+	0%, 35% {
+		left: 628px;
+	}
+	45%, 80% {
+		left: 300px;
+	}
+	90%, 100% {
+		left: -593px;
+	}
+}
+
+@-webkit-keyframes icon {
+	0%, 40% {
+		width:50px;
+		height: auto;
+		visibility: hidden;
+		opacity: 0;
+	}
+	42.5% {
+		width: 110px;
+		height: auto;	
+	}
+	45%, 100% {
+		width: 80px;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes icon {
+	0%, 40% {
+		left: 26px;
+		top: 10px;
+		width:70px;
+		height: auto;
+		visibility: hidden;
+		opacity: 0;
+	}
+	42.5% {
+		top: 0px;
+		left: 16px;
+		width: 90px;
+		height: auto;	
+	}
+	45%, 100% {
+		top: 5px;
+		left: 21px;
+		width: 80px;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes text2 {
+	0%, 40% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	43%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes text2 {
+	0%, 40% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	43%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes logo {
+	0%, 90% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	94%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes logo {
+	0%, 90% {
+		visibility: hidden;
+		opacity: 0;
+	}
+	94%, 100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
